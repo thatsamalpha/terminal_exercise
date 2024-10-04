@@ -1,0 +1,26 @@
+root@ALPHA:~# ls
+first  snacks.txt  snap
+root@ALPHA:~# cd first
+root@ALPHA:~/first# touch person.txt
+root@ALPHA:~/first# ls
+person.txt
+root@ALPHA:~/first# mv person.txt another.txt
+root@ALPHA:~/first# ls
+another.txt
+root@ALPHA:~/first# cp another.txt copy.txt
+root@ALPHA:~/first# ls
+another.txt  copy.txt
+root@ALPHA:~/first# rm copy.txt
+root@ALPHA:~/first# ls
+another.txt
+root@ALPHA:~/first# cd first
+-bash: cd: first: No such file or directory
+root@ALPHA:~/first# cd
+root@ALPHA:~# ls
+first  snacks.txt  snap
+root@ALPHA:~# cp -r first second
+root@ALPHA:~# ls
+first  second  snacks.txt  snap
+root@ALPHA:~# rm -rf second
+root@ALPHA:~# ls
+first  snacks.txt  snap
